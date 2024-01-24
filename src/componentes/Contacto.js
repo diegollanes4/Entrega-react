@@ -1,24 +1,21 @@
 import React, { useState } from 'react';
 
 const Contacto = () => {
-  // Estados para manejar el formulario
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
   const [mensaje, setMensaje] = useState('');
 
-  // Estado para almacenar y mostrar los datos enviados
   const [datosEnviados, setDatosEnviados] = useState(null);
 
-  // Manejar cambios en los campos del formulario
+
   const handleNombreChange = (event) => setNombre(event.target.value);
   const handleCorreoChange = (event) => setCorreo(event.target.value);
   const handleMensajeChange = (event) => setMensaje(event.target.value);
 
-  // Manejar el envío del formulario
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Guardar los datos enviados en el estado
+
     const nuevosDatosEnviados = {
       nombre,
       correo,
@@ -32,7 +29,7 @@ const Contacto = () => {
     <div>
       <h2>Contacto</h2>
 
-      {/* Formulario de contacto */}
+      
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="nombre">Nombre:</label>
@@ -66,7 +63,7 @@ const Contacto = () => {
         <button type="submit">Enviar</button>
       </form>
 
-      {/* Mostrar datos enviados si existen */}
+      
       {datosEnviados && (
         <div>
           <h3>Datos enviados:</h3>
@@ -76,7 +73,7 @@ const Contacto = () => {
         </div>
       )}
 
-      {/* Redes sociales */}
+      
       <div>
         <h3>Síguenos en redes sociales:</h3>
         <ul>

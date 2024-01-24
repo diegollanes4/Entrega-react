@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import estadioImage from '../estadiotfc.jpg'; // Importa la imagen directamente
+import estadioImage from '../estadiotfc.jpg'; 
 
 const Estadio = () => {
   const [historiaEstadio, setHistoriaEstadio] = useState('');
 
   useEffect(() => {
-    // Simular llamada a la API para obtener la historia ficticia del estadio
     const historiaFicticia = `
       Nuestro estadio, conocido como Estadio TFC, es un lugar lleno de historia y emoción. 
       Fue construido en 1990 y ha sido testigo de innumerables momentos memorables a lo largo de los años.

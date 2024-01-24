@@ -5,7 +5,7 @@ import Historia from './componentes/Historia';
 import Jugadores from './componentes/Jugadores';
 import Estadio from './componentes/Estadio';
 import Contacto from './componentes/Contacto';
-import Noticias from './componentes/Noticias'; // Asegúrate de importar Noticias
+import Noticias from './componentes/Noticias'; 
 
 const App = () => {
   const [estado, setEstado] = useState('');
@@ -13,7 +13,6 @@ const App = () => {
   return (
     <Router>
       <div>
-        {/* Barra de Navegación */}
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link className="navbar-brand" to="/home">
             Taddey Fc
@@ -44,9 +43,7 @@ const App = () => {
           </div>
         </nav>
 
-        {/* Contenido */}
         <div className="container mt-4">
-          {/* Rutas */}
           <Routes>
             <Route path="/home" element={<Noticias />} />
             <Route path="/historia" element={<Historia />} />

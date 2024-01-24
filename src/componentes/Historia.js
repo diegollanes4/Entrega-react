@@ -4,7 +4,6 @@ const Historia = () => {
   const [historia, setHistoria] = useState('');
 
   useEffect(() => {
-    // Simulando una llamada a la API para obtener una historia larga
     const historiaFicticia = `
       En el año 1980, nuestro querido equipo de fútbol fue fundado por un grupo apasionado de fanáticos.
       Durante la década de los 80, el equipo experimentó altibajos, pero lograron ganar su primer campeonato nacional en 1985.
